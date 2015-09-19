@@ -1,0 +1,10 @@
+# .rbenv，usr/binにpathを通す．
+PATH=
+
+# 以下のhogehogeの部分を本ディレクトリ内のfind_document.shの絶対パスに置き換える．
+10 * * * * hogehoge
+20 * * * * hogehoge
+30 * * * * hogehoge
+40 * * * * hogehoge
+50 * * * * hogehoge
+00 * * * * hogehge

@@ -1,0 +1,5 @@
+Documents_file
+database.db
+vendor
+/.bundle
+Gemfile.lock

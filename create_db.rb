@@ -48,8 +48,6 @@ class CreatedDB
 
   def parse_documents
     @documents_hash = []
-    @file = @filename.split("/")[4]
-    puts @file
     @documents.each do |doc|
       d = doc.split("\\t")
       @documents_hash <<
@@ -69,7 +67,7 @@ class CreatedDB
         "blocks" => d[13],
         "file_flags" => d[14],
         "path" => d[15],
-        "created_at" => @file
+        "created_at" => @created_at
       }
     end
   end
@@ -94,7 +92,7 @@ class CreatedDB
                      doc["blocks"].to_i,
                      doc["file_flags"].to_i,
                      doc["path"],
-                     @file
+                     doc["created_at"]
                     ])
       end
     end
